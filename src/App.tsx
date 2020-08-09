@@ -4,7 +4,8 @@ import React from 'react';
 import './App.css';
 import Sidenav from "./components/Sidenav";
 import Floor from "./components/Floor";
-import Curtains from "./components/Curtains";
+// import Curtains from "./components/Curtains";
+import Elevator from "./components/Elevator";
 
 
 function App() {
@@ -12,10 +13,9 @@ function App() {
     <div>
       <Sidenav />
       <Floor />
-      <Curtains />
-    </div>
-    
-  );
+     <Elevator />
+    </div> 
+  )
 }
 
 export default App;
