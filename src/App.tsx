@@ -4,6 +4,7 @@ import React from 'react';
 import './App.css';
 import Sidenav from "./components/Sidenav";
 import Floor from "./components/Floor";
+import Curtains from "./components/Curtains";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Sidenav />
       <Floor />
+      <Curtains />
     </div>
     
   );
