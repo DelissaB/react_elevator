@@ -38,24 +38,91 @@
   }
 }
 
-
+.sidenav {
+  background: hotpink;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .button {
   width: 100px;
   height: 100px;
   line-height: 45px;
   text-align: center;
   padding: 0;
-  border-radius: 50%; */
-
+  border-radius: 50%;
+  font-size: 5.0rem;
+  display: inline-block; 
  }
-.btn-circle-lg {
-width: 100px;
-height: 100px;
-line-height: 55px;
-font-size: 1.1rem;
-display: inline-block;
-}
+ .buttons
+ {
+  width: 100px;
+  height: 100px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  display: inline-block; 
+ }
 
-.fullpage {
-  background-color: silver;
+
+div#box1
+{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 900px;
+  background: hotpink;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
+}
+div#box2
+{
+  background: blue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
+}
+div#box3
+{
+  background: orange;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
+}
+div#box4
+{
+  background: red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
+}
+div#box5
+{
+  background: yellow;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
+}
+div#box6
+{
+  background: skyblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
 }

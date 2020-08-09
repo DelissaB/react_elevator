@@ -1,17 +1,19 @@
 import React from "react"
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
 interface ISidenavProps {}
 
 function Sidenav(props: ISidenavProps)  { 
   return (
-    <div>
+    <div className="buttons">
       <h1>Please select a floor!</h1>
-      <button onClick={Sidenav}> 1 </button>
-      <button onClick={Sidenav}> 2 </button>
-      <button onClick={Sidenav}> 3 </button>
-      <button onClick={Sidenav}> 4 </button>
-      <button onClick={Sidenav}> 5 </button>
-      <button onClick={Sidenav}> 6 </button>
+      <Link className="button" type="button" to="box6" smooth={true}duration={1000}> 6 </Link>
+      <Link className="button" type="button" to="box5" smooth={true}duration={2000}> 5 </Link>
+      <Link className="button" type="button" to="box4" smooth={true}duration={3000}> 4 </Link>
+      <Link className="button" type="button" to="box3" smooth={true}duration={4000}> 3 </Link>
+      <Link className="button" type="button" to="box2" smooth={true}duration={5000}> 2 </Link>
+      <Link className="button" type="button" to="box1" smooth={true}duration={6000}> 1 </Link>
   </div>
   )
 }
