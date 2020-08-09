@@ -39,12 +39,30 @@
 }
 
 .sidenav {
-  background: hotpink;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: silver;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  top: 0; /* Stay at the top */
+  left: 0;
+  /* overflow-x: hidden; */
+  /* padding-top: 20px; */
 }
+.sidenav a {
+  /* padding: 16px 30px 36px 16px; */
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
+  display: block;
+  background-color:silver;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: red;
+}
+
 .button {
   width: 100px;
   height: 100px;
@@ -55,7 +73,7 @@
   font-size: 5.0rem;
   display: inline-block; 
  }
- .buttons
+ /* .buttons
  {
   width: 100px;
   height: 100px;
@@ -65,7 +83,7 @@
   border-radius: 50%;
   font-size: 1.1rem;
   display: inline-block; 
- }
+ } */
 
 
 div#box1
