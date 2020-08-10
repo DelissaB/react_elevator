@@ -1,20 +1,19 @@
 import React from "react"
+// import Curtains from "./components/Curtains";
 
-interface ICurtainsProps {}
-
-function Curtains(props: ICurtainsProps)  { 
-  return (
-  <div className="curtain">
-    <div className="curtain__wrapper">
-      <input type="checkbox" checked></input>
+function Curtains() {
+  return(
+    <div className="curtain">
+      <div className="curtain__wrapper">
+        <input type="checkbox" checked></input>
         <div className="curtain__panel curtain__panel--left">
-         </div> 
+        </div> 
         <div className="curtain__prize">
         </div> 
-      <div className="curtain__panel curtain__panel--right">
-    </div> 
-  </div>
-</div>
+        <div className="curtain__panel curtain__panel--right">
+        </div>
+      </div> 
+    </div>
   )
 }
 
