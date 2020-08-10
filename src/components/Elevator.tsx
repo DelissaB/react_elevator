@@ -1,9 +1,16 @@
-import React, {Component} from 'react';
+import React, { useState} from 'react';
 import Floor from './Floor';
 import LeftDoor from './LeftDoor';
 import RightDoor from './RightDoor';
-import { makeStyles} from '@material-ui/core'
-
+import { Slide } from '@material-ui/core';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { makeStyles } from '@material-ui/core/styles';
+import Switch from '@material-ui/core/Switch';
+interface IElevatorProps {
+  floor: number;
+  errorMessage: string;
+  elevatorAction: (floor: number) => void;
+}
 
 const useStyles = makeStyles({
   curtain: {
@@ -26,7 +33,7 @@ const useStyles = makeStyles({
       float: 'left',
       background: 'orange',
       width: '100%',
-      right: '40%',
+      right: '45%',
       height: '100vh',
       position: 'fixed',
       zIndex: 2,
@@ -62,12 +69,22 @@ const useStyles = makeStyles({
 
 
 
-function Elevator()  { 
+export default function Elevator()  { 
+    const classes = useStyles();
+    const [checked, setChecked] = React.useState(false);
 
-const classes = useStyles();
+    const handleChange = () => {
+      setChecked((prev) => !prev);
+    };
 
     return (
       <div className={classes.curtain}>
+
+      <FormControlLabel
+      control={<Switch checked={checked} onChange={handleChange} />}
+      label="Show"
+    />
+        
         <div className={classes.floor}>
           <Floor />
         </div>
@@ -82,4 +99,3 @@ const classes = useStyles();
   };
 
 
-export default Elevator;
