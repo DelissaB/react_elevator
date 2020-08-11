@@ -1,4 +1,4 @@
-import React, { useState, Component} from 'react';
+import React, { Component } from 'react';
 import Floor from './Floor';
 import LeftDoor from './LeftDoor';
 import RightDoor from './RightDoor';
@@ -37,6 +37,7 @@ const useStyles = makeStyles({
       height: '100vh',
       position: 'fixed',
       zIndex: 2,
+      
   },
   // curtainWrapper: {
   //     width: "100%",
@@ -78,21 +79,28 @@ export default function Elevator()  {
     };
 
     return (
-      <div className={classes.curtain}>
 
-      <FormControlLabel className={classes.checkbox}
-      control={<Switch checked={checked} onChange={handleChange} />}
+      <div className={classes.curtain}>
+ 
+      <button onClick={handleChange}>Click me </button>
+ 
+      <FormControlLabel 
+      className={classes.checkbox}
+      control={<Switch checked={checked} onClick={handleChange} />}
       label="Show"
-    />
+          />
+
+        
+
         
         <div className={classes.floor}>
           <Floor />
         </div>
 
-        <Slide timeout={2000} direction="left" in={checked} mountOnEnter unmountOnExit>
-        <div className={classes.leftPanel}>
-          <LeftDoor />
-        </div>
+        <Slide timeout={2000} direction="left"   in={checked} mountOnEnter unmountOnExit>
+          <div className={classes.leftPanel}>
+            <LeftDoor />
+          </div>
         </Slide>
 {        
         <Slide timeout={2000} direction="right" in={checked} mountOnEnter unmountOnExit>
@@ -101,9 +109,6 @@ export default function Elevator()  {
         </div>
         </Slide>}
 
-        {/* <div className={classes.rightPanel}>
-          <RightDoor />
-        </div>   */}
      </div>
       )
   };

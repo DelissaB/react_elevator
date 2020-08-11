@@ -1,5 +1,5 @@
 import React from "react"
-import Curtains from "./Curtains";
+// import Curtains from "./Curtains";
 
 interface IFloorProps {}
 
