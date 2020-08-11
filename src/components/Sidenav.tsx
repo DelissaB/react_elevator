@@ -1,20 +1,38 @@
 import React from "react"
+import { Button } from '@material-ui/core';
 
 
 
 function Sidenav() {
     function handleChange() {
+
       console.log('Button Clicked!')
     }
 
   return (
-    <div>
-      <button onClick={handleChange}> CLICK ME!! From the sidenav page </button>
-    </div>
-  )
+    <div className="sidenav">
+      {/* <h1> Please Select a floor! </h1> */}
+      <a href="box6" className="button"> 6 </a>
+      <a href="box5" className="button"> 5 </a>
+      <a href="box4" className="button"> 4 </a>
+      <a href="box3" className="button"> 3 </a>
+      <a href="box2" className="button"> 2 </a>
+      <a href="box1" className="button"> 1 </a>
+
+      {/* <button>This is coming from the Sidenav page </button> */}
+      {/* <Button onClick={() => { alert('handleChange') }}>1</Button>
+      <Button onClick={() => { alert('handleChange') }}>2</Button>
+      <Button onClick={() => { alert('handleChange') }}>3</Button>
+      <Button onClick={() => { alert('handleChange') }}>4</Button>
+      <Button onClick={() => { alert('handleChange') }}>5</Button>
+      <Button onClick={() => { alert('handleChange') }}>6</Button> */}
+      </div>
+   )
 }
 
 export default Sidenav;
+
+
 
 
 

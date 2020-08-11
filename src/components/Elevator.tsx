@@ -87,13 +87,13 @@ export default function Elevator()  {
                 <Floor />
             </div>
 
-            <Slide timeout={2000} direction="left"   in={checked} mountOnEnter unmountOnExit>
+            <Slide timeout={3000} direction="left"   in={checked} mountOnEnter unmountOnExit>
               <div className={classes.leftPanel}>
                   <LeftDoor />
               </div>
             </Slide>
         {        
-            <Slide timeout={2000} direction="right" in={checked} mountOnEnter unmountOnExit>
+            <Slide timeout={3000} direction="right" in={checked} mountOnEnter unmountOnExit>
                 <div className={classes.rightPanel}>
                     <RightDoor />
                 </div>

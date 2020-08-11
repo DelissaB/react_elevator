@@ -37,7 +37,11 @@
     transform: rotate(360deg);
   }
 }
-
+.button_panel 
+{
+  background: yellow;
+  height: 100%;
+}
 .sidenav {
   background: silver;
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -51,9 +55,9 @@
   /* padding-top: 20px; */
 }
 .sidenav a {
-  /* padding: 16px 30px 36px 16px; */
+  padding: 16px 30px 36px 16px;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 65px;
   color: black;
   display: block;
   background-color:silver;
@@ -63,10 +67,10 @@
   color: red;
 }
 
-.button {
+.button_panel {
   width: 100px;
-  height: 100px;
-  line-height: 45px;
+  height: 200px;
+  line-height: 100px;
   text-align: center;
   padding: 0;
   border-radius: 50%;
