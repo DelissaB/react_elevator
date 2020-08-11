@@ -11,7 +11,7 @@ function Sidenav() {
 
   return (
     <div className="sidenav">
-      {/* <h1> Please Select a floor! </h1> */}
+      <h2> Please select a floor </h2>
       <a href="box6" className="button"> 6 </a>
       <a href="box5" className="button"> 5 </a>
       <a href="box4" className="button"> 4 </a>

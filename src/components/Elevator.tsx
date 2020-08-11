@@ -62,7 +62,7 @@ const useStyles = makeStyles({
       opacity: 0
   },
   floor:{
-      background: '#333',
+      background: 'yellow',
       position: 'absolute',
       zIndex: 1,
       width: '49%',

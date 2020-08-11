@@ -55,7 +55,8 @@
   /* padding-top: 20px; */
 }
 .sidenav a {
-  padding: 16px 30px 36px 16px;
+  /* padding: 16px 30px 36px 16px; */
+  padding: 16px;
   text-decoration: none;
   font-size: 65px;
   color: black;
@@ -94,31 +95,8 @@
   
  } */
 
-.roll-appear{
-  opacity:0;
-}
-.roll-enter{
-  opacity:0;
-}
-.roll-enter-done{
-  transform: rotate(720deg) scale(3);
-  opacity: 1;
-  transition: transform 100ms, opacity 1000ms;
-}
-.roll-exit{
-  transform: rotate(720deg) scale(3);
-  opacity: 1;
-}
-.roll-exit-active{
-  transform:rotate(0deg) scale(1);
-  opacity: 0;
-  transition: transform 1000ms, opacity 1000ms;
-}
-
-
-
-.section 
-{
+/* .section  */
+/* {
   background-color: hotpink;
   height: 100vh;
   width: 200vh;
@@ -127,17 +105,32 @@
   align-items: center;
   transition-timing-function: 1s ease-in-out;
   margin: 0;
+} */
+div#box
+{
+  background: red;
+  height: 100vh;
+  width: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* div#box1
+div#box1
 {
   background: hotpink;
+  height: 100vh;
+  width: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
 
 }
 div#box2
 {
   background: blue;
   height: 100vh;
+  width: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,6 +140,7 @@ div#box3
 {
   background: orange;
   height: 100vh;
+  width: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,6 +150,7 @@ div#box4
 {
   background: red;
   height: 100vh;
+  width: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,6 +160,7 @@ div#box5
 {
   background: yellow;
   height: 100vh;
+  width: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,18 +170,19 @@ div#box6
 {
   background: skyblue;
   height: 100vh;
+  width: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-timing-function: 1s ease-in-out;
-} */
+}
 
 /* .leftDoor 
 {
   z-index: 9;
   position: absolute; 
   top: 0; 
-  width: 100%; 
+  width: 200%; 
   height: 100%;
   background-image: yellow;
   background-size: 70px 120px;
