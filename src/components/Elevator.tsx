@@ -19,17 +19,17 @@ const useStyles = makeStyles({
       overflow: "hidden"
   },
   leftPanel: {
-      color: 'grey',
-      float: 'left',
+      // color: 'grey',
+      float: 'right',
       background: 'red',
       width: '100%',
-      left: '25%',
+      left: '55%',
       height: '100vh',
       position: 'fixed',
       zIndex: 2,
   },
   rightPanel: {
-      color: 'grey',
+      // color: 'grey',
       float: 'left',
       background: 'orange',
       width: '100%',
@@ -94,12 +94,12 @@ export default function Elevator()  {
           <LeftDoor />
         </div>
         </Slide>
-        
+{        
         <Slide timeout={2000} direction="right" in={checked} mountOnEnter unmountOnExit>
         <div className={classes.rightPanel}>
           <RightDoor />
         </div>
-        </Slide>
+        </Slide>}
 
         {/* <div className={classes.rightPanel}>
           <RightDoor />
