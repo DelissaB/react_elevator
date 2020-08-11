@@ -2,22 +2,20 @@ import React from "react"
 
 
 
-
-
-
 function Sidenav() {
-    function clickHandler() {
+    function handleChange() {
       console.log('Button Clicked!')
     }
 
   return (
     <div>
-      <button onClick={clickHandler}> CLICK ME!! From the sidenav page </button>
+      <button onClick={handleChange}> CLICK ME!! From the sidenav page </button>
     </div>
   )
 }
 
 export default Sidenav;
+
 
 
 // import { Link, animateScroll as scroll } from "react-scroll";
