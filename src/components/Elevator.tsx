@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   leftPanel: {
       // color: 'grey',
       float: 'right',
-      background: 'red',
+      background: 'grey',
       width: '100%',
       left: '55%',
       height: '100vh',
@@ -31,7 +31,7 @@ const useStyles = makeStyles({
   rightPanel: {
       // color: 'grey',
       float: 'left',
-      background: 'orange',
+      background: 'grey',
       width: '100%',
       right: '45%',
       height: '100vh',
