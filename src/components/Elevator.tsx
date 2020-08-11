@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Floor from './Floor';
-import LeftDoor from './LeftDoor';
-import RightDoor from './RightDoor';
-import { Slide } from '@material-ui/core';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import Floor from './Floor';
+// import LeftDoor from './LeftDoor';
+// import RightDoor from './RightDoor';
+// import { Slide } from '@material-ui/core';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { makeStyles } from '@material-ui/core/styles';
-import Switch from '@material-ui/core/Switch';
+// import Switch from '@material-ui/core/Switch';
+import Sidenav from './Sidenav';
 // interface IElevatorProps {
 //   floor: number;
 //   errorMessage: string;
@@ -69,49 +70,55 @@ const useStyles = makeStyles({
 });
 
 
+class Elevator extends Component {
 
-export default function Elevator()  { 
-    const classes = useStyles();
-    const [checked, setChecked] = React.useState(true);
+  clickHandler() {
+    console.log('Clicked the button')
+  }
+  
 
-    const handleChange = () => {
-      setChecked((prev) => !prev);
-    };
-
+  render() {
     return (
+      <div>
+        <Sidenav />
+      </div>
+    )
+  }
+}
 
-      <div className={classes.curtain}>
- 
-      <button onClick={handleChange}>Click me </button>
- 
-      <FormControlLabel 
-      className={classes.checkbox}
-      control={<Switch checked={checked} onClick={handleChange} />}
-      label="Show"
-          />
+export default Elevator;
 
-        
+// export default function Elevator()  { 
+//     const classes = useStyles();
+//     const [checked, setChecked] = React.useState(true);
 
-        
-        <div className={classes.floor}>
-          <Floor />
-        </div>
+//     const handleChange = () => {
+//       setChecked((prev) => !prev);
+//     };
 
-        <Slide timeout={2000} direction="left"   in={checked} mountOnEnter unmountOnExit>
-          <div className={classes.leftPanel}>
-            <LeftDoor />
-          </div>
-        </Slide>
-{        
-        <Slide timeout={2000} direction="right" in={checked} mountOnEnter unmountOnExit>
-        <div className={classes.rightPanel}>
-          <RightDoor />
-        </div>
-        </Slide>}
+//     return (
 
-     </div>
-      )
-  };
+//       <div className={classes.curtain}>
+       
+//         <div className={classes.floor}>
+//           <Floor />
+//         </div>
+
+//         <Slide timeout={2000} direction="left"   in={checked} mountOnEnter unmountOnExit>
+//           <div className={classes.leftPanel}>
+//             <LeftDoor />
+//           </div>
+//         </Slide>
+// {        
+//         <Slide timeout={2000} direction="right" in={checked} mountOnEnter unmountOnExit>
+//         <div className={classes.rightPanel}>
+//           <RightDoor />
+//         </div>
+//         </Slide>}
+
+//      </div>
+//       )
+//   };
 
 
 
