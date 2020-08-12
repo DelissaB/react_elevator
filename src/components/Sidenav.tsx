@@ -12,12 +12,12 @@ function Sidenav() {
   return (
     <div className="sidenav">
       <h2> Please select a floor </h2>
-      <a href="box6" className="button"> 6 </a>
-      <a href="box5" className="button"> 5 </a>
-      <a href="box4" className="button"> 4 </a>
-      <a href="box3" className="button"> 3 </a>
-      <a href="box2" className="button"> 2 </a>
-      <a href="box1" className="button"> 1 </a>
+      <button><a href="box6" className="button"> 6 </a></button>
+      <button><a href="box5" className="button"> 5 </a></button>
+      <button><a href="box4" className="button"> 4 </a></button>
+      <button><a href="box3" className="button"> 3 </a></button>
+      <button><a href="box2" className="button"> 2 </a></button>
+      <button><a href="box1" className="button"> 1 </a></button>
 
       {/* <button>This is coming from the Sidenav page </button> */}
       {/* <Button onClick={() => { alert('handleChange') }}>1</Button>
