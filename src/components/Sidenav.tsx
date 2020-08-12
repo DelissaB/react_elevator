@@ -4,10 +4,13 @@ import { Button } from '@material-ui/core';
 
 
 function Sidenav() {
-    function handleChange() {
-
-      console.log('Button Clicked!')
-    }
+    // function handleChange() {
+    //     return(
+          
+    //       console.log('Button Clicked!')
+    //     )
+      
+    // }
 
   return (
     <div className="sidenav">

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Floor from './Floor';
 import LeftDoor from './LeftDoor';
 import RightDoor from './RightDoor';
@@ -93,11 +93,11 @@ export default function Elevator()  {
               </div>
             </Slide>
             
-            
+{/*             
             <FormControlLabel 
       className={classes.checkbox}
       control={<Switch checked={checked} onClick={handleChange} />}
-      label="Show"
+      label="Show" */}
           />
        
             <Slide timeout={2000} direction="right" in={checked} mountOnEnter unmountOnExit>

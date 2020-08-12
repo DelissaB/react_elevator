@@ -1,9 +1,11 @@
 import React from "react"
 // import Curtains from "./Curtains";
 
+
 interface IFloorProps {}
 
 function Floor(props: IFloorProps)  { 
+
   return (
     <div className="floors">
       <div id="box"><h1>Welcome to the Elevator! Please select a floor </h1></div>
@@ -18,6 +20,7 @@ function Floor(props: IFloorProps)  {
 }
 
 export default Floor;
+
 
 
 // className="section active" 
