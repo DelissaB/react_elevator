@@ -3,9 +3,7 @@ import Floor from './Floor';
 import LeftDoor from './LeftDoor';
 import RightDoor from './RightDoor';
 import { Slide } from '@material-ui/core';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { makeStyles } from '@material-ui/core/styles';
-import Switch from '@material-ui/core/Switch';
 import Sidenav from './Sidenav';
 import  {Fragment} from 'react';
 // interface IElevatorProps {
