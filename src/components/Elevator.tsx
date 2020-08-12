@@ -98,7 +98,7 @@ export default function Elevator()  {
       className={classes.checkbox}
       control={<Switch checked={checked} onClick={handleChange} />}
       label="Show" */}
-          />
+          {/* /> */}
        
             <Slide timeout={2000} direction="right" in={checked} mountOnEnter unmountOnExit>
                 <div className={classes.rightPanel}>
