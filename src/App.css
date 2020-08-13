@@ -42,17 +42,31 @@
   background:green;
   height: 100%;
 } */
-.sidenav {
+
+/* .sidenav {
+  background: silver; */
+  /* height: 100%; Full-height: remove this if you want "auto" height */
+  /* width: 160px; Set the width of the sidebar */
+  /* text-align: center; */
+  /* position: fixed; */
+  /* z-index: 100; */
+  /* top: 0; Stay at the top */
+  /* left: 0; */
+  /* overflow-x: hidden; */
+  /* padding-top: 20px; */
+/* } */
+.sidenav-content {
   background: silver;
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 150px; /* Set the width of the sidebar */
   text-align: center;
   position: fixed;
   z-index: 100;
   top: 0; /* Stay at the top */
   left: 0;
-  /* overflow-x: hidden; */
-  /* padding-top: 20px; */
+  overflow-x: hidden; 
+  padding-top: 100px;
+  padding-right: 25px;
 }
 .sidenav-item {
   width: 100px;
@@ -61,18 +75,18 @@
   text-align: center;
   padding: 50;
   border-radius: 50%;
-  font-size: 4.0rem;
+  font-size: 60px;
   display: inline-block;
 }
-.sidenav a {
+/* .sidenav a { */
   /* padding: 16px 30px 36px 16px; */
-  padding: 16px;
+  /* padding: 16px;
   text-decoration: none;
   font-size: 60px;
   color: black;
   display: block;
   background-color:silver;
-}
+} */
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: red;
@@ -105,27 +119,39 @@
   
  } */
 
- /* .section {
-} */
+ .section {
+  background: blue;
+  height: 100vh;
+  width: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
+}
 
+
+/* Floor page */
 .section-content {
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 0;
   text-align: center;
+  /* background: yellow; */
+  /* height: 100vh;
+  width: 200vh;
+  display: flex;
+  justify-content: center;
+  transition-timing-function: 1s ease-in-out */
 }
-.sidenav-content {
-  background: silver;
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  text-align: center;
-  position: fixed;
-  z-index: 100;
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; 
-  padding-top: 100px;
-}
+
+
+/* background: hotpink;
+  height: 100vh;
+  width: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out */
 
 /* /.section  *
  {
