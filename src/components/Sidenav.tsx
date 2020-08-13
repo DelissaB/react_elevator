@@ -1,33 +1,36 @@
-import React from "react"
-import { Link, animateScroll as scroll } from "react-scroll";
+import React, { Component } from "react";
+// import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
 
-function Sidenav() {
-  return (
-    <div className="sidenav">
-      <h2> Please select a floor </h2>
-
-        <Link to="box6" className="button" type="button"  smooth={true}duration={1000}> 6
-        </Link> 
-
-        <Link to="box5" className="button" type="button"  smooth={true}duration={2000}> 5 
-        </Link>
-
-        <Link to="box4" className="button" type="button"  smooth={true}duration={3000}> 4 
-        </Link> 
-
-        <Link to="box3" className="button" type="button"  smooth={true}duration={4000}> 3 
-        </Link> 
-
-        <Link to="box2" className="button" type="button"  smooth={true}duration={5000}> 2 
-        </Link> 
-
-        <Link className="button" type="button" to="box1" smooth={true}duration={6000}> 1 
-        </Link>
-
-    </div>
-   )
+export default class Sidenav extends Component {
+  render() {
+    return (
+      <div className="sidenav-content">
+        <ul className="sidenav-items">
+          
+        <button className="sidenav-item"> 6</button>
+    
+        <button className="sidenav-item"> 5</button>
+    
+    
+        <button className="sidenav-item"> 4</button>
+    
+    
+        <button className="sidenav-item"> 3</button>
+    
+    
+          <button className="sidenav-item"> 2</button>
+      
+    
+        <button className="sidenav-item"> 1</button>
+          
+        </ul>
+      </div>
+    );
+  }
 }
-export default Sidenav;
+
+
+

@@ -4,7 +4,7 @@ import LeftDoor from './LeftDoor';
 import RightDoor from './RightDoor';
 import { Slide } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Sidenav from './Sidenav';
+// import Sidenav from './Sidenav';
 import  {Fragment} from 'react';
 // interface IElevatorProps {
 //   floor: number;
@@ -60,11 +60,11 @@ const useStyles = makeStyles({
       opacity: 0
   },
   floor:{
-      background: 'yellow',
+      background: 'red',
       position: 'absolute',
       zIndex: 1,
-      width: '49%',
-      height: '98%'
+      width: '100%',
+      height: '100%'
   }
 });
 
@@ -78,7 +78,7 @@ export default function Elevator()  {
 
     return (
         <Fragment>
-            <Sidenav />
+            
         
         <div className={classes.curtain}>
             <div className={classes.floor}>

@@ -1,26 +1,29 @@
 import React from "react"
-// import Curtains from "./Curtains";
+// import { title } from "process";
 
 
-interface IFloorProps {}
-
-function Floor(props: IFloorProps)  { 
-
+export default function Floor() {
   return (
-    <div className="floors">
-      <div id="box"><h1>Welcome to the Elevator! Please select a floor </h1></div>
-      <div id="box6"><h1>This is the sixth floor</h1></div>
-      <div id="box5"><h1>This is the fifth floor</h1></div>
-      <div id="box4"><h1>This is the fourth floor</h1></div>
-      <div id="box3"><h1>This is the third floor</h1></div>
-      <div id="box2"><h1>This is the second floor</h1></div>
-      <div id="box1"><h1>This is the first floor</h1></div>
-      </div>
+     <div className="section-content">
+        <div className="section6">
+        <h1>This is  a first floor of the elevator</h1>
+        </div>
+        <div className="section5">
+        <h1>This is  a second floor of the elevator</h1>
+        </div>
+        <div className="section4">
+        <h1>This is  a third floor of the elevator</h1>
+        </div>
+        <div className="section3">
+        <h1>This is  a fourth floor of the elevator</h1>
+        </div>
+        <div className="section2">
+        <h1>This is  a fifth floor of the elevator</h1>
+        </div>
+        <div className="section1">
+        <h1>This is  a sixth floor of the elevator</h1>
+        </div>
+    </div>
   )
 }
 
-export default Floor;
-
-
-
-// className="section active" 
