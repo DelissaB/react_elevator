@@ -15,7 +15,7 @@ import  {Fragment} from 'react';
 const useStyles = makeStyles({
   curtain: {
       width: "%",
-      height: "100vh",
+      height: "100%",
       overflow: "hidden"
   },
   leftPanel: {
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
       background: 'grey',
       width: '100%',
       left: '55%',
-      height: '100vh',
+      height: '100%',
       position: 'fixed',
       zIndex: 2,
   },
@@ -34,7 +34,7 @@ const useStyles = makeStyles({
       background: 'grey',
       width: '100%',
       right: '45%',
-      height: '100vh',
+      height: '100%',
       position: 'fixed',
       zIndex: 2,
       
@@ -59,7 +59,7 @@ const useStyles = makeStyles({
       zIndex: 100,
       opacity: 0
   },
-  floor:{
+  floor: {
       background: 'red',
       position: 'fixed',
       zIndex: 1,
@@ -82,7 +82,7 @@ export default function Elevator()  {
         
         <div className={classes.curtain}>
             <div className={classes.floor}>
-                <Floor />
+                <Floor  />
             </div>
 
             <Slide timeout={2000} direction="left"   in={checked} mountOnEnter unmountOnExit>
