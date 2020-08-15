@@ -61,7 +61,7 @@ const useStyles = makeStyles({
   },
   floor: {
       background: 'red',
-      position: 'fixed',
+      position: 'absolute',
       zIndex: 1,
       width: '100%',
       height: '100%'
@@ -70,11 +70,18 @@ const useStyles = makeStyles({
 
 export default function Elevator()  { 
     const classes = useStyles();
+    // const prevChecked= false
     const [checked, setChecked] = React.useState(true);
 
-    const handleChange = () => {
-      setChecked((prev) => !prev);
-    };
+    // const handleChange = () => {
+    //   setChecked(prevChecked);
+    // };
+ 
+    // function handleChange() => {
+    //     setChecked(prevChecked)
+    // }
+
+    
 
     return (
         <Fragment>
@@ -85,7 +92,7 @@ export default function Elevator()  {
                 <Floor  />
             </div>
 
-            <Slide timeout={2000} direction="left"   in={checked} mountOnEnter unmountOnExit>
+            <Slide timeout={2000} direction="left"   in={checked} mountOnEnter unmountOnExit >
               <div className={classes.leftPanel}>
                   <LeftDoor />
               </div>
