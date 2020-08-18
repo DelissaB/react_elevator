@@ -83,6 +83,18 @@
   font-size: 60px;
   display: inline-block;
 }
+.active,
+.sidenav-item:hover {
+  background-color: #666;
+  color: red;
+}
+/* .sidenav-item {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+} */
 .sidenav-items {
 }
 /* .floors {

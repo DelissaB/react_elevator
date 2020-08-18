@@ -1,78 +1,100 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link, animateScroll as scroll, Events, scrollSpy } from "react-scroll";
 
-export default function Sidenav() {
-  return (
-    <div className="sidenav-content">
-      <h1>Please Select a floor </h1>
-      <ul className="sidenav-items">
-        <button className="sidenav-item">
+class Sidenav extends Component {
+  render() {
+    return (
+      <div className="sidenav-content">
+        <h1>Please Select a floor </h1>
+        <ul className="sidenav-items">
           <Link
+            className="sidenav-item"
             activeClass="active"
             to="box6"
             spy={true}
             smooth={true}
             duration={6000}
+            onClick={() => {
+              this.setState({ visible: false });
+            }}
           >
             6
           </Link>
-        </button>
-        <button className="sidenav-item">
+
           <Link
+            className="sidenav-item"
             activeClass="active"
             to="box5"
             spy={true}
             smooth={true}
             duration={5000}
+            onClick={() => {
+              this.setState({ visible: false });
+            }}
           >
             5
           </Link>
-        </button>
-        <button className="sidenav-item">
+
           <Link
+            className="sidenav-item"
             activeClass="active"
             to="box4"
             spy={true}
             smooth={true}
             duration={4000}
+            onClick={() => {
+              this.setState({ visible: false });
+            }}
+            // onClick={}
           >
             4
           </Link>
-        </button>
-        <button className="sidenav-item">
+
           <Link
+            className="sidenav-item"
             activeClass="active"
             to="box3"
             spy={true}
             smooth={true}
             duration={3000}
+            onClick={() => {
+              this.setState({ visible: false });
+            }}
           >
             3
           </Link>
-        </button>
-        <button className="sidenav-item">
+
           <Link
+            className="sidenav-item"
             activeClass="active"
             to="box2"
             spy={true}
             smooth={true}
             duration={2000}
+            onClick={() => {
+              this.setState({ visible: false });
+            }}
           >
             2
           </Link>
-        </button>
-        <button className="sidenav-item">
+
           <Link
+            className="sidenav-item"
             activeClass="active"
             to="box1"
             spy={true}
             smooth={true}
             duration={1000}
+            onClick={() => {
+              this.setState({ visible: false });
+            }}
           >
             1
           </Link>
-        </button>
-      </ul>
-    </div>
-  );
+        </ul>
+      </div>
+    );
+  }
 }
+
+export default Sidenav;

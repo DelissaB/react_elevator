@@ -9,6 +9,10 @@ import RightDoor from "./components/RightDoor";
 // from "react-scroll";
 
 class App extends Component {
+  // state = {
+  //   visible: true,
+  // };
+
   render() {
     return (
       <div className="App">
