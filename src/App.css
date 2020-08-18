@@ -45,15 +45,15 @@
 
 /* .sidenav {
   background: silver; */
-  /* height: 100%; Full-height: remove this if you want "auto" height */
-  /* width: 160px; Set the width of the sidebar */
-  /* text-align: center; */
-  /* position: fixed; */
-  /* z-index: 100; */
-  /* top: 0; Stay at the top */
-  /* left: 0; */
-  /* overflow-x: hidden; */
-  /* padding-top: 20px; */
+/* height: 100%; Full-height: remove this if you want "auto" height */
+/* width: 160px; Set the width of the sidebar */
+/* text-align: center; */
+/* position: fixed; */
+/* z-index: 100; */
+/* top: 0; Stay at the top */
+/* left: 0; */
+/* overflow-x: hidden; */
+/* padding-top: 20px; */
 /* } */
 
 .h1 {
@@ -70,7 +70,7 @@
   z-index: 100;
   top: 0; /* Stay at the top */
   left: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   padding-right: 25px;
 }
 .sidenav-item {
@@ -84,13 +84,12 @@
   display: inline-block;
 }
 .sidenav-items {
-
 }
 /* .floors {
   background-color: indigo;
 } */
 
-div#box6{
+div#box6 {
   background-color: lightcoral;
   width: 100%;
   height: 900px;
@@ -127,6 +126,44 @@ div#box1 {
   text-align: center;
 }
 
+.leftDoor {
+  width: 50%;
+  background-color: yellow;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  animation: leftDoor 3s;
+}
+.rightDoor {
+  width: 50%;
+  background-color: blue;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  animation: rightDoor 3s;
+}
+@keyframes leftDoor {
+  from {
+    left: 0;
+  }
+  to {
+    left: -50%;
+  }
+}
+@keyframes rightDoor {
+  from {
+    right: 0;
+  }
+  to {
+    right: -50%;
+  }
+}
 
 /* .sidenav-content {
   position: relative;
@@ -142,8 +179,8 @@ div#box1 {
  } */
 
 /* .sidenav a { */
-  /* padding: 16px 30px 36px 16px; */
-  /* padding: 16px;
+/* padding: 16px 30px 36px 16px; */
+/* padding: 16px;
   text-decoration: none;
   font-size: 60px;
   color: black;
@@ -165,7 +202,7 @@ div#box1 {
   font-size: 5.0rem;
   display: inline-block; 
  } */
- /* .buttons
+/* .buttons
  {
   width: 100px;
   height: 100px;
@@ -177,16 +214,12 @@ div#box1 {
   display: inline-block; 
  } */
 
- /* .elevator 
+/* .elevator 
  {
   
  } */
 
- 
-  
-
-
- /* div#section5 {
+/* div#section5 {
   background-color: indigo;
   height: 100vh;
   width: 200vh;
@@ -232,21 +265,19 @@ div#section1 {
   transition-timing-function: 1s ease-in-out;
 } */
 
-
 /* Floor page */
 /* .section-content h1 {
   width: 100%;
   margin: 0 auto;
   padding: 0;
   text-align: center; */
-  /* background: yellow; */
-  /* height: 100vh;
+/* background: yellow; */
+/* height: 100vh;
   width: 200vh;
   display: flex;
   justify-content: center;
   transition-timing-function: 1s ease-in-out */
 /* } */
-
 
 /* background: hotpink;
   height: 100vh;
@@ -266,7 +297,7 @@ div#section1 {
   align-items: center;
   transition-timing-function: 1s ease-in-out;
   margin: 0;
-} */ 
+} */
 /* div#box
 {
   background: red;
@@ -340,7 +371,7 @@ div#box6
 
 /* .leftDoor 
 /* { */
-  /* z-index: 9;
+/* z-index: 9;
   position: absolute; 
   top: 0; 
   width: 200%; 
@@ -350,4 +381,3 @@ div#box6
   transition: transform 2s;
   transform: scaleX(0) */
 /* } */
-
