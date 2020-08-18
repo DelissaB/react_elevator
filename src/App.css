@@ -61,7 +61,7 @@
   height: 100px;
 }
 .sidenav-content {
-  background: silver;
+  background: hotpink;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 150px; /* Set the width of the sidebar */
   text-align: center;
@@ -140,7 +140,8 @@ div#box1 {
 
 .leftDoor {
   width: 50%;
-  background-color: yellow;
+  background: url("https://images.unsplash.com/photo-1558325939-c3f590da2e2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  /* background-color: yellow; */
   height: 100%;
   position: fixed;
   margin: 0;
@@ -151,7 +152,8 @@ div#box1 {
 }
 .rightDoor {
   width: 50%;
-  background-color: blue;
+  background: url("https://images.unsplash.com/photo-1558325939-c3f590da2e2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  /* background-color: blue; */
   height: 100%;
   position: fixed;
   margin: 0;
