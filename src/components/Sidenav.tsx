@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll, Events, scrollSpy } from "react-scroll";
 
-class Sidenav extends Component {
+class Sidenav extends React.Component {
+  handleClick = () => {
+    alert("clicked.");
+  };
+
   render() {
     return (
       <div className="sidenav-content">
@@ -14,10 +18,9 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={6000}
-            onClick={() => {
-              this.setState({ visible: false });
-            }}
+            onClick={this.handleClick}
           >
+            {" "}
             6
           </Link>
 
@@ -28,9 +31,7 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={5000}
-            onClick={() => {
-              this.setState({ visible: false });
-            }}
+            onClick={this.handleClick}
           >
             5
           </Link>
@@ -42,10 +43,7 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={4000}
-            onClick={() => {
-              this.setState({ visible: false });
-            }}
-            // onClick={}
+            onClick={this.handleClick}
           >
             4
           </Link>
@@ -57,9 +55,7 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={3000}
-            onClick={() => {
-              this.setState({ visible: false });
-            }}
+            onClick={this.handleClick}
           >
             3
           </Link>
@@ -71,9 +67,7 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={2000}
-            onClick={() => {
-              this.setState({ visible: false });
-            }}
+            onClick={this.handleClick}
           >
             2
           </Link>
@@ -85,9 +79,7 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={1000}
-            onClick={() => {
-              this.setState({ visible: false });
-            }}
+            onClick={this.handleClick}
           >
             1
           </Link>
