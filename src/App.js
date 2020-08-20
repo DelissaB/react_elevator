@@ -14,12 +14,13 @@ import { Link, animateScroll as scroll, Events, scrollSpy } from "react-scroll";
 // }
 class App extends React.Component {
   render() {
+    const title = "This is a floor";
     return (
       <div className="App">
         <Sidenav />
         <RightDoor />
         <LeftDoor />
-        <Floor title={this.props.title} />
+        <Floor title={title} />
       </div>
     );
   }
