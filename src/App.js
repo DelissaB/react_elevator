@@ -13,12 +13,25 @@ import { Link, animateScroll as scroll, Events, scrollSpy } from "react-scroll";
 //   active: true;
 // }
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isShow: true,
+    };
+  }
+
+  toggleShow = () => {
+    this.setState((state) => ({ isShow: !state.isShow }));
+  };
   render() {
     const title = "This is a floor";
     return (
       <div className="App">
         <Sidenav />
-        <RightDoor />
+        <div>
+          {this.state.isShow ? <RightDoor className="rightDoor" /> : null}
+        </div>
         <LeftDoor />
         <Floor title={title} />
       </div>
