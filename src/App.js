@@ -16,10 +16,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Sidenav />
         <RightDoor />
         <LeftDoor />
-        <Sidenav />
-        <Floor />
+        <Floor title={this.props.title} />
       </div>
     );
   }
