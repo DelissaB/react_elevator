@@ -1,30 +1,32 @@
 import React from "react";
+import LeftDoor from "./LeftDoor";
+import RightDoor from "./RightDoor";
 
-class Floor extends React.Component {
-  render() {
-    return (
-      <div className="floors">
-        <div className="section6" id="box6">
-          <h1>{this.props.title}</h1>
-        </div>
-        <div className="section5" id="box5">
-          <h1>{this.props.title}</h1>
-        </div>
-        <div className="section4" id="box4">
-          <h1>{this.props.title}r</h1>
-        </div>
-        <div className="section3" id="box3">
-          <h1>{this.props.title}</h1>
-        </div>
-        <div className="section2" id="box2">
-          <h1>{this.props.title}r</h1>
-        </div>
-        <div className="section1" id="box1">
-          <h1>{this.props.title}</h1>
-        </div>
+const Floor = (props) => {
+  return (
+    <div className="floors">
+      <div className="section6">
+        <h1 onClick={props.showFloor}>{props.title}</h1>
       </div>
-    );
-  }
-}
+      <div className="section5">
+        <h1 onClick={props.showFloor}>{props.title}</h1>
+      </div>
+      <div className="section4">
+        <h1 onClick={props.showFloor}>{props.title}</h1>
+      </div>
+      <div className="section3">
+        <h1 onClick={props.showFloor}>{props.title}</h1>
+      </div>
+      <div className="section2">
+        <h1 onClick={props.showFloor}>{props.title}</h1>
+      </div>
+      <div className="section1">
+        <h1 onClick={props.showFloor}>{props.title}</h1>
+      </div>
+      <LeftDoor />
+      <RightDoor />
+    </div>
+  );
+};
 
 export default Floor;

@@ -10,7 +10,7 @@ class Sidenav extends React.Component {
           <Link
             className="sidenav-item"
             activeClass="active"
-            to="box6"
+            to="section6"
             spy={true}
             smooth={true}
             duration={6000}
@@ -22,7 +22,7 @@ class Sidenav extends React.Component {
           <Link
             className="sidenav-item"
             activeClass="active"
-            to="box5"
+            to="section5"
             spy={true}
             smooth={true}
             duration={5000}
@@ -34,7 +34,7 @@ class Sidenav extends React.Component {
           <Link
             className="sidenav-item"
             activeClass="active"
-            to="box4"
+            to="section4"
             spy={true}
             smooth={true}
             duration={4000}
@@ -46,7 +46,7 @@ class Sidenav extends React.Component {
           <Link
             className="sidenav-item"
             activeClass="active"
-            to="box3"
+            to="section3"
             spy={true}
             smooth={true}
             duration={3000}
@@ -58,7 +58,7 @@ class Sidenav extends React.Component {
           <Link
             className="sidenav-item"
             activeClass="active"
-            to="box2"
+            to="section2"
             spy={true}
             smooth={true}
             duration={2000}
@@ -70,7 +70,7 @@ class Sidenav extends React.Component {
           <Link
             className="sidenav-item"
             activeClass="active"
-            to="box1"
+            to="section1"
             spy={true}
             smooth={true}
             duration={1000}

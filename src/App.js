@@ -6,18 +6,17 @@ import LeftDoor from "./components/LeftDoor";
 import RightDoor from "./components/RightDoor";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  state = {
+    title: "This will represent a floor",
+  };
 
-    this.state = {
-      isDoorOpen: true,
-    };
-  }
-  componentDidMount() {
-    this.setState({ door: true });
-  }
+  // onChange() => {
+
+  // }
+  // componentDidMount() {
+  //   this.setState({ door: true });
+  // }
   render() {
-    const title = "This is a floor";
     return (
       <div className="App">
         <Sidenav />
@@ -25,7 +24,7 @@ class App extends React.Component {
         <RightDoor />
 
         <LeftDoor />
-        <Floor title={title} />
+        <Floor title={this.state.title} />
       </div>
     );
   }

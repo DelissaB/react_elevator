@@ -101,19 +101,19 @@
   background-color: indigo;
 } */
 
-div#box6 {
-  background: url("https://upload.wikimedia.org/wikipedia/commons/4/42/Emerald_tropical_lagoon_in_Phang_Nga_Bay%2C_Thailand.jpg");
-  /* background-color: lightcoral; */
-  width: 100%;
+/* div#box6 { */
+/* background: url("https://upload.wikimedia.org/wikipedia/commons/4/42/Emerald_tropical_lagoon_in_Phang_Nga_Bay%2C_Thailand.jpg"); */
+/* background-color: lightcoral; */
+/* width: 100%;
   height: 900px;
-  text-align: center;
-}
+  text-align: center; */
+/* }
 div#box5 {
   background-color: yellow;
   width: 100%;
   height: 900px;
-  text-align: center;
-}
+  text-align: center; */
+/* }
 div#box4 {
   background-color: teal;
   width: 100%;
@@ -130,14 +130,14 @@ div#box2 {
   background-color: orange;
   width: 100%;
   height: 900px;
-  text-align: center;
-}
+  text-align: center; */
+/* }
 div#box1 {
   background-color: plum;
   width: 100%;
   height: 900px;
   text-align: center;
-}
+} */
 
 .leftDoor {
   width: 50%;
@@ -234,51 +234,61 @@ div#box1 {
   
  } */
 
-/* div#section5 {
+.section6 {
   background-color: indigo;
-  height: 100vh;
-  width: 200vh;
+
+  width: 100%;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-timing-function: 1s ease-in-out;
 }
-div#section4 {
+.section5 {
   background-color: yellow;
-  height: 100vh;
-  width: 200vh;
+  width: 100%;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-timing-function: 1s ease-in-out;
 }
-div#section3 {
+.section4 {
+  background-color: yellow;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: 1s ease-in-out;
+}
+.section3 {
   background-color: red;
-  height: 100vh;
-  width: 200vh;
+  width: 100%;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-timing-function: 1s ease-in-out;
 }
-div#section2 {
+.section2 {
   background-color: hotpink;
-  height: 100vh;
-  width: 200vh;
+  width: 100%;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-timing-function: 1s ease-in-out;
 }
-div#section1 {
+.section1 {
   background-color: hotpink;
-  height: 100vh;
-  width: 200vh;
+  width: 100%;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-timing-function: 1s ease-in-out;
-} */
+}
 
 /* Floor page */
 /* .section-content h1 {
