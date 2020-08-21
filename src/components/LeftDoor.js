@@ -14,7 +14,7 @@ const LeftDoor = () => {
         <div
           data-aos="slide-right"
           className="leftDoor"
-          data-aos-easing="ease-in-out"
+          data-aos-easing="ease-out"
         >
           1
         </div>

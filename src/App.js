@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import Sidenav from "./components/Sidenav";
 import Floor from "./components/Floor";
-import LeftDoor from "./components/LeftDoor";
-import RightDoor from "./components/RightDoor";
+// import LeftDoor from "./components/LeftDoor";
+// import RightDoor from "./components/RightDoor";
 
 class App extends React.Component {
   state = {
@@ -21,9 +21,9 @@ class App extends React.Component {
       <div className="App">
         <Sidenav />
 
-        <RightDoor />
+        {/* <RightDoor />
 
-        <LeftDoor />
+        <LeftDoor /> */}
         <Floor title={this.state.title} />
       </div>
     );

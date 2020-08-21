@@ -23,8 +23,8 @@ const Floor = (props) => {
       <div className="section1">
         <h1 onClick={props.showFloor}>{props.title}</h1>
       </div>
-      <LeftDoor />
-      <RightDoor />
+      <LeftDoor {...props} />
+      <RightDoor {...props} />
     </div>
   );
 };
