@@ -161,7 +161,7 @@ div#box1 {
   padding: 0;
   top: 0;
   right: 0;
-  animation: rightDoor 3s;
+  /* animation: rightDoor 3s; */
 }
 @keyframes leftDoor {
   from {
