@@ -1,6 +1,6 @@
 import React from "react";
-import LeftDoor from "./LeftDoor";
-import RightDoor from "./RightDoor";
+// import LeftDoor from "./LeftDoor";
+// import RightDoor from "./RightDoor";
 
 const Floor = (props) => {
   return (
@@ -23,8 +23,8 @@ const Floor = (props) => {
       <div className="section1">
         <h1 onClick={props.showFloor}>{props.title}</h1>
       </div>
-      <LeftDoor {...props} />
-      <RightDoor {...props} />
+      {/* <LeftDoor {...props} />
+      <RightDoor {...props} /> */}
     </div>
   );
 };
