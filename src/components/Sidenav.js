@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, animateScroll as scroll, Events, scrollSpy } from "react-scroll";
+import { Link } from "react-scroll";
 
 class Sidenav extends React.Component {
   render() {

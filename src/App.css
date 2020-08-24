@@ -149,7 +149,7 @@ div#box1 {
   padding: 0;
   top: 0;
   left: 0;
-  animation: leftDoor 3s;
+  /* animation: leftDoor 3s; */
 }
 .rightDoor {
   width: 50%;
