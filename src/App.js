@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
 import Sidenav from "./components/Sidenav";
 import Floor from "./components/Floor";
 import LeftDoor from "./components/LeftDoor";
@@ -9,25 +10,30 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      isLoading: true,
+      bool: false,
     };
   }
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        isLoading: false,
-      });
-    }, 1500);
-  }
+  toggle = () => {
+    this.setState((prevState) => ({
+      bool: !prevState.bool,
+    }));
+  };
+
   render() {
+    const {
+      toggle,
+      state: { bool },
+    } = this;
+
     return (
-      <div className="App">
+      <div>
+        <Router></Router>
+
         <Sidenav />
 
         <RightDoor />
-
-        <LeftDoor isLoading={this.state.isLoading} />
+        <LeftDoor />
 
         <Floor />
       </div>
