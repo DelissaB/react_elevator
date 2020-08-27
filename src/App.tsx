@@ -9,16 +9,17 @@ import RightDoor from "./components/RightDoor";
 // from "react-scroll";
 
 class App extends Component {
-  // handleChange() {}
+  // handleChange() {
+  //   alert("This should click");
+  // }
 
   render() {
     return (
       <div className="App">
+        <Sidenav />
         <LeftDoor />
         <RightDoor />
         <Floor />
-        <Sidenav />
-        {/* <Elevator /> */}
       </div>
     );
   }

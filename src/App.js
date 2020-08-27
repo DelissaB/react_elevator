@@ -1,41 +1,33 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 import Sidenav from "./components/Sidenav";
 import Floor from "./components/Floor";
 import LeftDoor from "./components/LeftDoor";
 import RightDoor from "./components/RightDoor";
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      bool: false,
+      door: false,
     };
   }
 
-  toggle = () => {
-    this.setState((prevState) => ({
-      bool: !prevState.bool,
-    }));
-  };
+  // handleClick = () => {
+  //   this.setStaet({});
+  // };
 
   render() {
-    const {
-      toggle,
-      state: { bool },
-    } = this;
-
     return (
-      <div>
-        <Router></Router>
-
+      <div className="App">
         <Sidenav />
 
-        <RightDoor />
+        <Floor />
+
         <LeftDoor />
 
-        <Floor />
+        <RightDoor />
       </div>
     );
   }

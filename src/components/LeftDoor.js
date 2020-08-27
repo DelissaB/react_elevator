@@ -1,6 +1,6 @@
 import React from "react";
 
-function LeftDoor() {
+function leftDoor() {
   return <div className="leftDoor"></div>;
 }
-export default LeftDoor;
+export default leftDoor;
