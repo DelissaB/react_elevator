@@ -1,15 +1,16 @@
-import React, { Component } from "react";
-// import LeftDoor from "./LeftDoor";
+import React from "react";
 
-class Doors extends Component {
-  state = {
-    open: false,
-  };
-
+class Doors extends React.Component {
   render() {
+    const { isDoorVisible } = this.props;
     return (
-      <div>
-        <LeftDoor door={this.state.open} />
+      <div
+        className={`doors_wrapper ${isDoorVisible && "doors_wrapper-visible"}`}
+      >
+        <div className="doors">
+          <div className="leftDoor"></div>
+          <div className="rightDoor"></div>
+        </div>
       </div>
     );
   }
