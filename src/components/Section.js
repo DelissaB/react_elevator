@@ -1,6 +1,5 @@
 import React from "react";
-import LeftDoor from "./LeftDoor";
-import RightDoor from "./RightDoor";
+// import Doors from "./Doors";
 
 export default function Section({ title, subtitle, dark, id }) {
   return (
@@ -9,8 +8,7 @@ export default function Section({ title, subtitle, dark, id }) {
         <h1>{title}</h1>
         <p>{subtitle}</p>
       </div>
-      <LeftDoor />
-      <RightDoor />
+      {/* <Doors /> */}
     </div>
   );
 }

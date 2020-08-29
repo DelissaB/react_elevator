@@ -3,28 +3,33 @@ import "./App.css";
 // import { BrowserRouter as Router } from "react-router-dom";
 // import Sidenav from "./components/Sidenav";
 // import Floor from "./components/Floor";
-// import Doors from "./components/Doors";
+import Doors from "./components/Doors";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import floorText from "./FloorText";
+import { createTrue } from "typescript";
 // import shortid from "shortid";
 // import LeftDoor from "./components/LeftDoor";
 // import RightDoor from "./components/RightDoor";
 
 class App extends React.Component {
-  state = {
-    isDoorVisible: false,
-  };
+  constructor() {
+    super();
+    this.state = {
+      isHidden: true,
+    };
+  }
 
-  toggleDoor = () => {
-    this.setState({ isDoorVisible: !this.state.isDoorVisible });
-  };
+  toggleHidden() {
+    this.setState({ isHidden: !this.state.isHidden });
+  }
 
   render() {
-    const { isDoorVisible } = this.state;
+    console.log(this);
     return (
       <div className="App">
-        <Navbar />
+        <Navbar onClick={this.toggleHidden.bind(this)} />
+        {!this.state.isHidden && <Doors />}
         <Section
           title="Section 1"
           subtime={floorText}

@@ -3,6 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {
   render() {
+    const { toggleHidden } = this.props;
     return (
       <nav className="sidenav" id="navbar">
         <div className="sidenav-content">
@@ -15,6 +16,7 @@ export default class Navbar extends Component {
                 smooth={true}
                 offset={-70}
                 duration={6000}
+                onClick={toggleHidden}
               >
                 1
               </Link>
