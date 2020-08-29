@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default class Navbar extends Component {
   render() {
+    console.log(this.props);
     const { toggleHidden } = this.props;
     return (
       <nav className="sidenav" id="navbar">
-        <div className="sidenav-content">
+        <div className="sidenav-content" onClick={toggleHidden}>
           <ul className="sidenav-items">
-            <li className="sidenav-item">
+            <li className="sidenav-item" onClick={toggleHidden}>
               <Link
                 activeClass="active"
                 to="section1"

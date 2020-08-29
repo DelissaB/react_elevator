@@ -7,29 +7,30 @@ import Doors from "./components/Doors";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import floorText from "./FloorText";
-import { createTrue } from "typescript";
+
 // import shortid from "shortid";
 // import LeftDoor from "./components/LeftDoor";
 // import RightDoor from "./components/RightDoor";
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      isHidden: true,
+      isHidden: false,
     };
   }
 
-  toggleHidden() {
+  toggleHidden = () => {
     this.setState({ isHidden: !this.state.isHidden });
-  }
-
+  };
   render() {
-    console.log(this);
+    console.log(this.state);
     return (
       <div className="App">
-        <Navbar onClick={this.toggleHidden.bind(this)} />
-        {!this.state.isHidden && <Doors />}
+        <Navbar toggleHidden={this.toggleHidden} />
+        {/* onClick={this.toggleHidden.bind(this)}  */}
+        {/* {!this.state.isHidden && <Doors />} */}
+        <Doors isHidden={this.state.isHidden} />
         <Section
           title="Section 1"
           subtime={floorText}
