@@ -47,36 +47,42 @@ class App extends React.Component {
           subtime={floorText}
           dark={true}
           id="section2"
+          color="green"
         />
         <Section
           title="Section 3"
           subtime={floorText}
           dark={true}
           id="section3"
+          color="purple"
         />
         <Section
           title="Section 4"
           subtime={floorText}
           dark={true}
           id="section4"
+          color="yellow"
         />
         <Section
           title="Section 5"
           subtime={floorText}
           dark={true}
           id="section5"
+          color="blue"
         />
         <Section
           title="Section 6"
           subtime={floorText}
           dark={true}
           id="section6"
+          color="red"
         />
         <Section
           title="Section 6"
           subtime={floorText}
           dark={true}
           id="section7"
+          color="orange"
         />
 
         {/* <Floor /> */}
