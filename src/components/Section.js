@@ -1,10 +1,11 @@
 import React from "react";
 // import Doors from "./Doors";
 
-export default function Section({ title, subtitle, color, dark, id }) {
+export default function Section({ title, subtitle, color, image, dark, id }) {
   return (
     <div
       style={{ backgroundColor: color }}
+      // style={{ backgroundImage:  }}
       className={"section" + (dark ? " section-dark" : "")}
     >
       <div className="section-content" id={id}>

@@ -17,6 +17,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       isHidden: false,
+      currentFloor: 0,
     };
   }
 
@@ -27,51 +28,56 @@ class App extends React.Component {
     }, 3000);
   };
 
+  // handleFloorChange = () => {
+  //   this.setState({ currentFloor: });
+  // };
+
   render() {
     console.log(this.state);
+    // console.log(this.state);
     return (
       <div className="App">
         <Navbar toggleHidden={this.toggleHidden} />
-        {/* onClick={this.toggleHidden.bind(this)}  */}
-        {/* {!this.state.isHidden && <Doors />} */}
+
         <Doors isHidden={this.state.isHidden} />
         <Section
-          title="Section 1"
+          title="This is the first floor"
           subtime={floorText}
           dark={true}
           id="section1"
+          // image="/Users/delissa/Actualize/react_elevator/public/Turkey.jpg"
           color="pink"
         />
         <Section
-          title="Section 2"
+          title="This is the second floor"
           subtime={floorText}
           dark={true}
           id="section2"
           color="green"
         />
         <Section
-          title="Section 3"
+          title="This is the third floor"
           subtime={floorText}
           dark={true}
           id="section3"
           color="purple"
         />
         <Section
-          title="Section 4"
+          title="This is the fourth floor"
           subtime={floorText}
           dark={true}
           id="section4"
           color="yellow"
         />
         <Section
-          title="Section 5"
+          title="This is the fifth floor"
           subtime={floorText}
           dark={true}
           id="section5"
           color="blue"
         />
         <Section
-          title="Section 6"
+          title="This is the sixth floor"
           subtime={floorText}
           dark={true}
           id="section6"
