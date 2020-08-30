@@ -149,8 +149,6 @@ div#box1 {
   padding: 0;
   top: 0;
   left: 0;
-  animation: leftDoor 3s;
-  animation-timing-function: ease-in-out;
 }
 .rightDoor {
   width: 50%;
@@ -162,9 +160,17 @@ div#box1 {
   padding: 0;
   top: 0;
   right: 0;
+}
+
+.rightDoorOpening {
   animation: rightDoor 3s;
   animation-timing-function: ease-in-out;
 }
+.leftDoorOpening {
+  animation: leftDoor 3s;
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes leftDoor {
   from {
     left: 0;

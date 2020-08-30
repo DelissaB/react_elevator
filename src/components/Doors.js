@@ -4,11 +4,9 @@ class Doors extends React.Component {
   render() {
     const { isHidden } = this.props;
     return (
-      <div className={`doors_wrapper ${isHidden && "doors_wrapper-visible"}`}>
-        <div className="doors">
-          <div className="leftDoor"></div>
-          <div className="rightDoor"></div>
-        </div>
+      <div className="doors">
+        <div className={`leftDoor ${isHidden && "leftDoorOpening"}`}></div>
+        <div className={` rightDoor ${isHidden && "rightDoorOpening"}`}></div>
       </div>
     );
   }

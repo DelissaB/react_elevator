@@ -21,8 +21,12 @@ class App extends React.Component {
   }
 
   toggleHidden = () => {
-    this.setState({ isHidden: !this.state.isHidden });
+    this.setState({ isHidden: true });
+    setTimeout(() => {
+      this.setState({ isHidden: false });
+    }, 3000);
   };
+
   render() {
     console.log(this.state);
     return (
@@ -36,6 +40,7 @@ class App extends React.Component {
           subtime={floorText}
           dark={true}
           id="section1"
+          color="pink"
         />
         <Section
           title="Section 2"

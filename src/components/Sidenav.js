@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 class Sidenav extends Component {
   render() {
-    const { toggleDoor } = this.props;
+    const { toggleHidden } = this.props;
     return (
       <div className="sidenav-content">
         <h1>Please Select a floor </h1>
@@ -15,7 +15,7 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={6000}
-            onClick={toggleDoor}
+            onClick={toggleHidden}
           >
             6
           </Link>
@@ -27,7 +27,7 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={5000}
-            // onClick={handleClick}
+            onClick={toggleHidden}
           >
             5
           </Link>
@@ -39,7 +39,7 @@ class Sidenav extends Component {
             spy={true}
             smooth={true}
             duration={4000}
-            // onClick={handleClick}
+            onClick={toggleHidden}
           >
             4
           </Link>
