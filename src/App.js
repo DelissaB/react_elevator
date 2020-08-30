@@ -46,7 +46,7 @@ class App extends React.Component {
           dark={true}
           id="section1"
           // image="/Users/delissa/Actualize/react_elevator/public/Turkey.jpg"
-          color="pink"
+          color="hotpink"
         />
         <Section
           title="This is the second floor"
