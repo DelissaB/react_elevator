@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 export default class Navbar extends Component {
   render() {
     const { toggleHidden } = this.props;
+    const { toggleDuration } = this.props;
     // console.log(this.props);
     return (
       <div className="sidenav-content">
@@ -13,8 +14,7 @@ export default class Navbar extends Component {
           to="section1"
           spy={true}
           smooth={true}
-          // offset={-70}
-          duration={6000}
+          duration={toggleDuration}
           onSetActive={toggleHidden}
         >
           1
@@ -26,8 +26,7 @@ export default class Navbar extends Component {
           to="section2"
           spy={true}
           smooth={true}
-          // offset={-70}
-          duration={5000}
+          // duration={5000}
           onSetActive={toggleHidden}
         >
           2
@@ -39,8 +38,7 @@ export default class Navbar extends Component {
           to="section3"
           spy={true}
           smooth={true}
-          // offset={-70}
-          duration={4000}
+          // duration={4000}
           onSetActive={toggleHidden}
         >
           3
@@ -52,8 +50,7 @@ export default class Navbar extends Component {
           to="section4"
           spy={true}
           smooth={true}
-          // offset={-70}
-          duration={3000}
+          // duration={3000}
           onSetActive={toggleHidden}
         >
           4
@@ -65,8 +62,7 @@ export default class Navbar extends Component {
           to="section5"
           spy={true}
           smooth={true}
-          // offset={-70}
-          duration={2000}
+          // duration={2000}
           onSetActive={toggleHidden}
         >
           5
@@ -78,8 +74,7 @@ export default class Navbar extends Component {
           to="section6"
           spy={true}
           smooth={true}
-          // offset={-70}
-          duration={1000}
+          // duration={1000}
           onSetActive={toggleHidden}
         >
           6
@@ -91,8 +86,7 @@ export default class Navbar extends Component {
           to="section7"
           spy={true}
           smooth={true}
-          // offset={-70}
-          duration={1000}
+          // duration={1000}
           onSetActive={toggleHidden}
         >
           ?

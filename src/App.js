@@ -17,7 +17,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       isHidden: false,
-      currentFloor: 0,
+      currentFloor: "active",
     };
   }
 
@@ -28,16 +28,20 @@ class App extends React.Component {
     }, 3000);
   };
 
-  // handleFloorChange = () => {
-  //   this.setState({ currentFloor: });
-  // };
+  toggleDuration = (floor) => {
+    this.setState({ currentFloor: "not active" });
+    console.log("this is the duration function");
+  };
 
   render() {
     console.log(this.state);
     // console.log(this.state);
     return (
       <div className="App">
-        <Navbar toggleHidden={this.toggleHidden} />
+        <Navbar
+          toggleHidden={this.toggleHidden}
+          toggleDuration={this.toggleDuration}
+        />
 
         <Doors isHidden={this.state.isHidden} />
         <Section
