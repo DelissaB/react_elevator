@@ -17,24 +17,19 @@ class App extends React.Component {
     super(props);
     this.state = {
       isHidden: false,
-      currentFloor: "active",
+      // isFloorActive: false,
     };
   }
 
-  toggleHidden = () => {
+  toggleHidden = (e, v) => {
     this.setState({ isHidden: true });
     setTimeout(() => {
       this.setState({ isHidden: false });
     }, 3000);
   };
 
-  toggleDuration = (floor) => {
-    this.setState({ currentFloor: "not active" });
-    console.log("this is the duration function");
-  };
-
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     // console.log(this.state);
     return (
       <div className="App">

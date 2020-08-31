@@ -170,6 +170,31 @@ div#box1 {
   animation-timing-function: ease-in-out;
 }
 
+.rightDoorClosing {
+  animation: rightDoorReverse 3s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rightDoorReverse {
+  from {
+    right: -50%;
+  }
+  to {
+    right: 0%;
+  }
+}
+.leftDoorClosing {
+  animation: leftDoorReverse 3s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes leftDoorReverse {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
 @keyframes leftDoor {
   from {
     left: 0;

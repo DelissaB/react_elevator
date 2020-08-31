@@ -1,71 +1,33 @@
 import React, { Component } from "react";
-import { Link } from "react-scroll";
+import { Link, Events } from "react-scroll";
 
 export default class Navbar extends Component {
+  handleDuration = (distance) => {
+    const value = Math.abs(distance);
+    const numberOfFloors = value / 980;
+    return numberOfFloors * 1000;
+  };
+
   render() {
     const { toggleHidden } = this.props;
     const { toggleDuration } = this.props;
-    // console.log(this.props);
+
+    Events.scrollEvent.register("end", function (to, element) {
+      toggleHidden();
+      console.log("end", to, element);
+    });
+
     return (
       <div className="sidenav-content">
         <Link
           className="sidenav-item"
           activeClass="active"
-          to="section1"
+          to="section7"
           spy={true}
           smooth={true}
-          duration={toggleDuration}
-          onSetActive={toggleHidden}
+          duration={this.handleDuration}
         >
-          1
-        </Link>
-
-        <Link
-          className="sidenav-item"
-          activeClass="active"
-          to="section2"
-          spy={true}
-          smooth={true}
-          // duration={5000}
-          onSetActive={toggleHidden}
-        >
-          2
-        </Link>
-
-        <Link
-          className="sidenav-item"
-          activeClass="active"
-          to="section3"
-          spy={true}
-          smooth={true}
-          // duration={4000}
-          onSetActive={toggleHidden}
-        >
-          3
-        </Link>
-
-        <Link
-          className="sidenav-item"
-          activeClass="active"
-          to="section4"
-          spy={true}
-          smooth={true}
-          // duration={3000}
-          onSetActive={toggleHidden}
-        >
-          4
-        </Link>
-
-        <Link
-          className="sidenav-item"
-          activeClass="active"
-          to="section5"
-          spy={true}
-          smooth={true}
-          // duration={2000}
-          onSetActive={toggleHidden}
-        >
-          5
+          7
         </Link>
 
         <Link
@@ -74,8 +36,7 @@ export default class Navbar extends Component {
           to="section6"
           spy={true}
           smooth={true}
-          // duration={1000}
-          onSetActive={toggleHidden}
+          duration={this.handleDuration}
         >
           6
         </Link>
@@ -83,13 +44,56 @@ export default class Navbar extends Component {
         <Link
           className="sidenav-item"
           activeClass="active"
-          to="section7"
+          to="section5"
           spy={true}
           smooth={true}
-          // duration={1000}
-          onSetActive={toggleHidden}
+          duration={this.handleDuration}
         >
-          ?
+          5
+        </Link>
+
+        <Link
+          className="sidenav-item"
+          activeClass="active"
+          to="section4"
+          spy={true}
+          smooth={true}
+          duration={this.handleDuration}
+        >
+          4
+        </Link>
+
+        <Link
+          className="sidenav-item"
+          activeClass="active"
+          to="section3"
+          spy={true}
+          smooth={true}
+          duration={this.handleDuration}
+        >
+          3
+        </Link>
+
+        <Link
+          className="sidenav-item"
+          activeClass="active"
+          to="section2"
+          spy={true}
+          smooth={true}
+          duration={this.handleDuration}
+        >
+          2
+        </Link>
+
+        <Link
+          className="sidenav-item"
+          activeClass="active"
+          to="section1"
+          spy={true}
+          smooth={true}
+          duration={this.handleDuration}
+        >
+          1
         </Link>
       </div>
     );

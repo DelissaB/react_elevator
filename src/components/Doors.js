@@ -5,8 +5,16 @@ class Doors extends React.Component {
     const { isHidden } = this.props;
     return (
       <div className="doors">
-        <div className={`leftDoor ${isHidden && "leftDoorOpening"}`}></div>
-        <div className={` rightDoor ${isHidden && "rightDoorOpening"}`}></div>
+        <div
+          className={`leftDoor ${
+            isHidden ? "leftDoorOpening" : "leftDoorClosing"
+          }`}
+        ></div>
+        <div
+          className={` rightDoor ${
+            isHidden ? "rightDoorOpening" : "rightDoorClosing"
+          }`}
+        ></div>
       </div>
     );
   }

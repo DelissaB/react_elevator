@@ -4,6 +4,7 @@ import React from "react";
 export default function Section({ title, subtitle, color, image, dark, id }) {
   return (
     <div
+      duration={1000}
       style={{ backgroundColor: color }}
       // style={{ backgroundImage:  }}
       className={"section" + (dark ? " section-dark" : "")}
