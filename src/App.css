@@ -211,12 +211,50 @@ div#box1 {
     right: -50%;
   }
 }
+
 .section {
   transition-timing-function: 1s ease;
 }
 
 .section-dark {
-  background: #333;
+  background-image: url("https://cms.hostelworld.com/hwblog/wp-content/uploads/sites/2/2018/09/PINK-BEACH2.jpg");
+  background-size: cover;
+  color: pink;
+  text-align: center;
+}
+.section-morocco {
+  background-image: url("https://cdn.kimkim.com/files/a/content_articles/featured_photos/e5de02c303247f5a00e97fdcdd77f0d0fa57a1e5/big-2287663f9a43c6fe0c392893122b98ed.jpg");
+  background-size: cover;
+  color: pink;
+  text-align: center;
+}
+.section-chicago {
+  background-image: url("https://www.enjoyillinois.com/assets/Uploads/_resampled/ScaleWidthWzEyMDBd/Chicago-Hero-1.jpg");
+  background-size: cover;
+  color: pink;
+  text-align: center;
+}
+.section-japan {
+  background-image: url("https://www.bcdtravel.com/move-global/wp-content/uploads/sites/142/Move_MarketMonitor_Japan_slider_May2019.jpg");
+  background-size: cover;
+  color: pink;
+  text-align: center;
+}
+.section-africa {
+  background-image: url("https://www.thetimes.co.uk/expert-traveller/wp-content/uploads/2018/11/GettyImages-477451698-2200x880.jpg");
+  background-size: cover;
+  color: pink;
+  text-align: center;
+}
+.section-turkey {
+  background-image: url("https://iadsb.tmgrup.com.tr/8266ad/1200/627/0/0/800/417?u=https://idsb.tmgrup.com.tr/2019/07/02/turkish-lawmaker-urges-tourists-to-visit-magical-hot-air-balloon-fest-in-cappadocia-1562052668204.jpg");
+  background-size: cover;
+  color: pink;
+  text-align: center;
+}
+.section-grandcanyon {
+  background-image: url("https://www.smartertravel.com/uploads/2017/08/grand-canyon-sunset.jpg");
+  background-size: cover;
   color: pink;
   text-align: center;
 }

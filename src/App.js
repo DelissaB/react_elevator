@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import floorText from "./FloorText";
 
+// import turkey from "../images/turkey.jpg";
+
 // import shortid from "shortid";
 // import LeftDoor from "./components/LeftDoor";
 // import RightDoor from "./components/RightDoor";
@@ -29,8 +31,6 @@ class App extends React.Component {
   };
 
   render() {
-    // console.log(this.state);
-    // console.log(this.state);
     return (
       <div className="App">
         <Navbar
@@ -38,53 +38,53 @@ class App extends React.Component {
           toggleDuration={this.toggleDuration}
         />
 
-        <Doors isHidden={this.state.isHidden} />
+        {/* <Doors isHidden={this.state.isHidden} /> */}
         <Section
           title="This is the first floor"
-          subtime={floorText}
+          subtitle={floorText}
           dark={true}
           id="section1"
-          // image="/Users/delissa/Actualize/react_elevator/public/Turkey.jpg"
-          color="hotpink"
+
+          // color="hotpink"
         />
         <Section
           title="This is the second floor"
-          subtime={floorText}
+          subtitle={floorText}
           dark={true}
           id="section2"
           color="green"
         />
         <Section
           title="This is the third floor"
-          subtime={floorText}
+          subtitle={floorText}
           dark={true}
           id="section3"
           color="purple"
         />
         <Section
           title="This is the fourth floor"
-          subtime={floorText}
+          subtitle={floorText}
           dark={true}
           id="section4"
           color="yellow"
         />
         <Section
           title="This is the fifth floor"
-          subtime={floorText}
+          subtitle={floorText}
           dark={true}
           id="section5"
           color="blue"
         />
         <Section
           title="This is the sixth floor"
-          subtime={floorText}
+          subtitle={floorText}
           dark={true}
           id="section6"
           color="red"
         />
         <Section
           title="Section 6"
-          subtime={floorText}
+          subtitle={floorText}
           dark={true}
           id="section7"
           color="orange"
