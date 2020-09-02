@@ -7,6 +7,7 @@ import Doors from "./components/Doors";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import floorText from "./FloorText";
+// import Background from "./components/Background";
 
 // import turkey from "../images/turkey.jpg";
 
@@ -38,56 +39,53 @@ class App extends React.Component {
           toggleDuration={this.toggleDuration}
         />
 
-        {/* <Doors isHidden={this.state.isHidden} /> */}
+        <Doors isHidden={this.state.isHidden} />
         <Section
-          title="This is the first floor"
-          subtitle={floorText}
+          className="section-morocco"
+          title="Welcome to the first floor!"
           dark={true}
           id="section1"
-
-          // color="hotpink"
         />
         <Section
-          title="This is the second floor"
-          subtitle={floorText}
-          dark={true}
+          className="section-dark"
+          title="Welcome to the second floor!"
+          dark={false}
           id="section2"
-          color="green"
         />
         <Section
-          title="This is the third floor"
-          subtitle={floorText}
-          dark={true}
+          className="section-chicago"
+          title="Welcome to the third floor!"
+          dark={false}
           id="section3"
-          color="purple"
+          // color="purple"
         />
         <Section
-          title="This is the fourth floor"
-          subtitle={floorText}
-          dark={true}
+          className="section-japan"
+          title="Welcome to the fourth floor!"
+          dark={false}
           id="section4"
-          color="yellow"
+          // color="yellow"
         />
         <Section
-          title="This is the fifth floor"
-          subtitle={floorText}
-          dark={true}
+          className="section-africa"
+          title="Welcome to the fifth floor!"
+          dark={false}
           id="section5"
-          color="blue"
+          // color="blue"
         />
         <Section
-          title="This is the sixth floor"
-          subtitle={floorText}
-          dark={true}
+          className="section-turkey"
+          title="Welcome to the sixth floor!"
+          dark={false}
           id="section6"
           color="red"
         />
         <Section
-          title="Section 6"
-          subtitle={floorText}
-          dark={true}
+          className="section-grandcanyon"
+          title="Welcome to the seventh floor!"
+          dark={false}
           id="section7"
-          color="orange"
+          // color="orange"
         />
 
         {/* <Floor /> */}
