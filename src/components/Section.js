@@ -18,7 +18,7 @@ export default function Section({
       // className={"section" + (dark ? " section-dark" : "")}
       // className={"section" + (turkey ? " section-turkey" : "")}
     >
-      <div className={className} id={id} backgroundImage={backgroundImage}>
+      <div className={className} id={id} backgroundimage={backgroundImage}>
         <h1>{title}</h1>
         <p>{subtitle}</p>
       </div>

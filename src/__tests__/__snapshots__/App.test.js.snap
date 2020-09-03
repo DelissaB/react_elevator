@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My first snapshot test testing app button 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="sidenav-content"
+  >
+    <a
+      className="sidenav-item"
+      onClick={[Function]}
+    >
+      7
+    </a>
+    <a
+      className="sidenav-item"
+      onClick={[Function]}
+    >
+      6
+    </a>
+    <a
+      className="sidenav-item"
+      onClick={[Function]}
+    >
+      5
+    </a>
+    <a
+      className="sidenav-item"
+      onClick={[Function]}
+    >
+      4
+    </a>
+    <a
+      className="sidenav-item"
+      onClick={[Function]}
+    >
+      3
+    </a>
+    <a
+      className="sidenav-item"
+      onClick={[Function]}
+    >
+      2
+    </a>
+    <a
+      className="sidenav-item"
+      onClick={[Function]}
+    >
+      1
+    </a>
+  </div>
+  <div
+    className="doors"
+  >
+    <div
+      className="leftDoor leftDoorClosing"
+    />
+    <div
+      className=" rightDoor rightDoorClosing"
+    />
+  </div>
+  <div
+    duration={1000}
+  >
+    <div
+      className="section-morocco"
+      id="section1"
+    >
+      <h1>
+        Welcome to the first floor!
+      </h1>
+      <p />
+    </div>
+  </div>
+  <div
+    duration={1000}
+  >
+    <div
+      className="section-dark"
+      id="section2"
+    >
+      <h1>
+        Welcome to the second floor!
+      </h1>
+      <p />
+    </div>
+  </div>
+  <div
+    duration={1000}
+  >
+    <div
+      className="section-chicago"
+      id="section3"
+    >
+      <h1>
+        Welcome to the third floor!
+      </h1>
+      <p />
+    </div>
+  </div>
+  <div
+    duration={1000}
+  >
+    <div
+      className="section-japan"
+      id="section4"
+    >
+      <h1>
+        Welcome to the fourth floor!
+      </h1>
+      <p />
+    </div>
+  </div>
+  <div
+    duration={1000}
+  >
+    <div
+      className="section-africa"
+      id="section5"
+    >
+      <h1>
+        Welcome to the fifth floor!
+      </h1>
+      <p />
+    </div>
+  </div>
+  <div
+    duration={1000}
+  >
+    <div
+      className="section-turkey"
+      id="section6"
+    >
+      <h1>
+        Welcome to the sixth floor!
+      </h1>
+      <p />
+    </div>
+  </div>
+  <div
+    duration={1000}
+  >
+    <div
+      className="section-grandcanyon"
+      id="section7"
+    >
+      <h1>
+        Welcome to the seventh floor!
+      </h1>
+      <p />
+    </div>
+  </div>
+</div>
+`;

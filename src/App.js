@@ -6,7 +6,7 @@ import "./App.css";
 import Doors from "./components/Doors";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
-import floorText from "./FloorText";
+// import floorText from "./FloorText";
 // import Background from "./components/Background";
 
 // import turkey from "../images/turkey.jpg";
