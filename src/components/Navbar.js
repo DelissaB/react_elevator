@@ -26,6 +26,7 @@ export default class Navbar extends Component {
           spy={true}
           smooth={true}
           duration={this.handleDuration}
+          title="Welcome to the Grand Canyon National Park, Arizona"
         >
           7
         </Link>
@@ -37,6 +38,7 @@ export default class Navbar extends Component {
           spy={true}
           smooth={true}
           duration={this.handleDuration}
+          title="Welcome to the Cappadocia International Hot-Air Balloon Festival"
         >
           6
         </Link>
@@ -48,6 +50,7 @@ export default class Navbar extends Component {
           spy={true}
           smooth={true}
           duration={this.handleDuration}
+          title="Welcome to Victoria Falls, Zimbabwe, Africa"
         >
           5
         </Link>
@@ -59,6 +62,7 @@ export default class Navbar extends Component {
           spy={true}
           smooth={true}
           duration={this.handleDuration}
+          title="Cherry Blossom Gardens, Japan"
         >
           4
         </Link>
@@ -70,6 +74,7 @@ export default class Navbar extends Component {
           spy={true}
           smooth={true}
           duration={this.handleDuration}
+          title="Chicago, Illinois - Best City Ever"
         >
           3
         </Link>
@@ -81,6 +86,7 @@ export default class Navbar extends Component {
           spy={true}
           smooth={true}
           duration={this.handleDuration}
+          title="Pantai Merah, Bali, Indonesia"
         >
           2
         </Link>
@@ -92,6 +98,7 @@ export default class Navbar extends Component {
           spy={true}
           smooth={true}
           duration={this.handleDuration}
+          title="Chefchaouen–Morocco’s Blue City"
         >
           1
         </Link>
