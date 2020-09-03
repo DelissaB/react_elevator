@@ -59,6 +59,7 @@
 .h1 {
   width: 100px;
   height: 100px;
+  align-items: center;
 }
 .sidenav-content {
   background: beige;
