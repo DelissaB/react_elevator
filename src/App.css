@@ -163,16 +163,16 @@ div#box1 {
 }
 
 .rightDoorOpening {
-  animation: rightDoor 3s;
+  animation: rightDoor 5s;
   animation-timing-function: ease-in-out;
 }
 .leftDoorOpening {
-  animation: leftDoor 3s;
+  animation: leftDoor 5s;
   animation-timing-function: ease-in-out;
 }
 
 .rightDoorClosing {
-  animation: rightDoorReverse 3s;
+  animation: rightDoorReverse 5s;
   animation-timing-function: ease-in-out;
 }
 @keyframes rightDoorReverse {
@@ -184,7 +184,7 @@ div#box1 {
   }
 }
 .leftDoorClosing {
-  animation: leftDoorReverse 3s;
+  animation: leftDoorReverse 5s;
   animation-timing-function: ease-in-out;
 }
 @keyframes leftDoorReverse {
